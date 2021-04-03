@@ -102,7 +102,7 @@ EXPOSE 3030
 
 WORKDIR /opt/elastalert
 
-RUN pip3 install --no-cache-dir cryptography --user
+RUN pip3 install --no-cache-dir cryptography=="2.8" --user
 RUN pip3 install --no-cache-dir -r requirements.txt --user
 
 WORKDIR /opt/elastalert-server
